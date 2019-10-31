@@ -22,7 +22,8 @@ Requires Java 8+.
 
 ## Test
 
-- Open http://localhost:8080/date to run a first business request through gateway then service 1 then service 2
+- Open http://localhost:8080/date or use `curl http://localhost:8080/date` to run a first business request
 - Open http://localhost:9411/ to see that first request correctly displayed in Zipkin
-- Open http://localhost:8080/date with the "B3" HTTP header set to "1111111111111111-1111111111111111" (use curl or Postman or whatever), to run a second business request
-- In http://localhost:9411/ see that the second request is incorrectly displayed, the spans order of the ZIpkin trace is wrong
+- Open http://localhost:8080/date with the "B3" HTTP header set to (for example) "1111111111111111-1111111111111111"
+  (use `curl -H "B3: 1111111111111111-1111111111111111" http://localhost:8080/date` or Postman or whatever), to run a second business request
+- In http://localhost:9411/ see that the second request is incorrectly displayed, the spans order is wrong
