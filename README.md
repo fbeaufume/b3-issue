@@ -1,6 +1,7 @@
 # B3 propagation issue sample
 
-This project is a minimal working example for the B3 header propagation issue I described in https://github.com/spring-cloud/spring-cloud-sleuth/issues/1452
+This project is a minimal working example for the B3 header propagation issue I described
+in https://github.com/spring-cloud/spring-cloud-sleuth/issues/1452
 
 It contains a gateway and two business microservices. No database is required.
 
@@ -11,7 +12,8 @@ Requires Java 8+.
 - Clone the sources
 - Edit the Spring Boot and Spring Cloud versions in the main pom.xml if needed
 - Build the sources with `mvnw package`
-- Install Zipkin server by downloading from https://search.maven.org/remote_content?g=io.zipkin&a=zipkin-server&v=LATEST&c=exec or use Docker, see https://zipkin.io/pages/quickstart for details
+- Install Zipkin server by downloading from https://search.maven.org/remote_content?g=io.zipkin&a=zipkin-server&v=2.18.3&c=exec
+  or use Docker, see https://zipkin.io/pages/quickstart for details
 
 ## Execution
 
